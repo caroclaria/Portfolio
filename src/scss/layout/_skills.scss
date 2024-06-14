@@ -1,0 +1,47 @@
+@use 'base/variables' as v;
+
+.skills{
+    background-color: v.$oscuro;
+    margin: 0;
+
+}
+.skills__titulo {
+    display: block;
+    padding: 2rem;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: v.$claro;
+}
+.skills__contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    @media (min-width: 768px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+.skills__icono{
+    color: v.$claro;
+}
+.skills__icono:hover {
+    transform: scale(1.5);
+}
+.skills__icono--html:hover{
+    color: #DD4B25;
+}
+.skills__icono--css:hover{
+    color: #0068BA;
+}
+.skills__icono--js:hover{
+    color: #EFD81D;
+}
+.skills__icono--php:hover{
+    color: #7377AD;
+}

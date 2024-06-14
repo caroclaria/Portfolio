@@ -1,0 +1,10 @@
+@use 'base/variables' as v;
+
+.mobile-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 768px){
+        display: none;
+    };
+}
